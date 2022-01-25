@@ -20,9 +20,6 @@ const credentials = {
 const server = servac.createServer(credentials, app);
 
 
-
-
-
 const { ExpressPeerServer } = require("peer");
 const peerServer = ExpressPeerServer(server, {
   debug: true,
@@ -57,4 +54,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(443);
+server.listen(4433);
